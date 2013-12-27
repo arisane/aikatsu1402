@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>アイカツ！岩手ポータルサイト</title>
+<meta name="keywords" content="アイカツ!岩手" />
+<meta name="description" content="アイカツ！岩手勢ポータルサイト" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+
+<div id="page_top">
+ <h1><a href="index.html">アイカツ！岩手ポータルサイト</a></h1>
+ <p><img class="main_photo" src="img/header.jpg" alt=""></p>
+</div>
+
+</header>
+
+<div id="content">
+<h1>アイカツ！2014年2弾配列サーチ</h1>
+<section>
+ <h2>仕様</h2>
+ <p><b>01,02,CP01,CP02などの1桁の番号は1,2,CP1,CP2と2桁目の0を除いて入力してください。</b></br>
+ 実際には配列表に無い山が多数存在します。
+ </p>
+</section>
+
+<section>
+ <h2>配列サーチ</h2>
+ <p>1枚から利用できます。
+ <form action="output.php" method="post">
+  <table border="1">
+    <tr>
+      <td>左カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<form action="output.php" method="post">
+  <table border="1">
+    <tr>
+      <td>右カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<br>
+ </p>
+</section>
+
+<section>
+ <h2>配列サーチ2</h2>
+ <p>3枚から利用できます。3枚完全一致で出力します.<br>
+<form action="output2.php" method="post">
+  <table border="1">
+    <tr>
+      <td>左カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<form action="output2.php" method="post">
+  <table border="1">
+    <tr>
+      <td>右カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<br>
+ </p>
+</section>
+
+<section>
+ <h2>配列サーチ3</h2>
+ <p>5枚から利用できます。5枚完全一致で出力します<br>
+<form action="5mai.php" method="post">
+  <table border="1">
+    <tr>
+      <td>左 カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<form action="5mai.php" method="post">
+  <table border="1">
+    <tr>
+      <td>右 カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<br>
+ </p>
+</section>
+
+<section>
+ <h2>配列サーチ4</h2>
+ <p>5単純に入力した数値を塗りつぶします。<br>左右どちらの配列かわからない場合、数人と回してる場合などに有効かも？<br>
+<form action="output3.php" method="post">
+  <table border="1">
+    <tr>
+      <td>青色</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td rowspan="2">
+        <input type="submit" value="入力"></td>
+    </tr>
+    <tr>
+      <td>水色</td>
+      <td><input type="text" name="no6" style="width:50"></td>
+      <td><input type="text" name="no7" style="width:50"></td>
+      <td><input type="text" name="no8" style="width:50"></td>
+      <td><input type="text" name="no9" style="width:50"></td>
+      <td><input type="text" name="no10" style="width:50"></td>
+    </tr>
+  </table>
+</form>
+
+<br>
+ </p>
+</section>
+
+</div>
+
+<nav>
+ <h2>サイトメニュー</h2>
+  <ul>
+   <li><a href="index.html">ホーム</a></li>
+   <li><a href="search.html">配列サーチ</a></li>
+   <li><a href="card.html">アイカツ！カード表</a></li>
+   <li><a href="ranking.html">ランキング</a></li>
+   <li><a href="event.html">イベント</a></li>
+   <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<div id="page_back">
+ <p><a href="#page_top">▲ページトップに戻る</a></p>
+</div>
+
+<footer>
+ </footer>
+
+</body>
+</html>

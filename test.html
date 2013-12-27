@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>カウントアップ</title>
+<script>
+window.onload = function(){
+// それぞれのボタンを取得
+var targetBtn = document.getElementById("cde");
+var resetBtn = document.getElementById("reset")
+// targetBtnの値を取得
+var num = targetBtn.value;
+var name = targetBtn.name;
+// targetBtnをクリックしたとき
+targetBtn.onclick = function(){
+num++;
+targetBtn.value = name + num;
+}
+
+// resetBtnをクリックしたとき
+resetBtn.onclick = function(){
+num = 0;
+targetBtn.value = name + num;
+}
+
+// 初期設定
+targetBtn.value = name+num;
+}
+</script>
+</head>
+<body>
+<input type="button" name="ボタン名" value="0" id="cde" />
+<input type="button" value="reset" id="reset" />
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>お問い合わせ - アイカツ！岩手ポータルサイト</title>
+<meta name="keywords" content="アイカツ!岩手" />
+<meta name="description" content="アイカツ！岩手勢ポータルサイト" />
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+<meta name="format-detection" content="telephone=no">
+<link rel="stylesheet" href="style.css">
+
+<script>
+window.onload = function(){
+// それぞれのボタンを取得
+var targetBtn = document.getElementById("cde");
+var resetBtn = document.getElementById("reset")
+var target1Btn = document.getElementById("cde1");
+var reset1Btn = document.getElementById("reset1")
+// targetBtnの値を取得
+var num = targetBtn.value;
+var name = targetBtn.name;
+var num1 = target1Btn.value;
+var name1 = target1Btn.name;
+// targetBtnをクリックしたとき
+targetBtn.onclick = function(){
+num++;
+targetBtn.value = name + num;
+}
+target1Btn.onclick = function(){
+num1++;
+target1Btn.value = name1 + num1;
+}
+
+// resetBtnをクリックしたとき
+resetBtn.onclick = function(){
+num = 0;
+targetBtn.value = name + num;
+}
+reset1Btn.onclick = function(){
+num1 = 0;
+target1Btn.value = name1 + num1;
+}
+// 初期設定
+targetBtn.value = name+num;
+target1Btn.value = name1+num1;
+}
+</script>
+
+</head>
+<body>
+
+<header>
+
+<div id="page_top">
+ <h1><a href="index.html">アイカツ！岩手ポータルサイト</a></h1>
+ <p><img class="main_photo" src="img/header.jpg" alt=""></p>
+</div>
+
+</header>
+
+<div id="content">
+
+<section>
+ <h2>お問い合わせ</h2>
+ <p>何かアレばTwitterのarisaneか、mail@arisane.comまでメール下さい。</p>
+</section>
+
+<section>
+ <h2>実験的なツール</h2>
+ <p>ノーマルカードをカウントする時用のやつ</br>
+ 
+ <input type="button" name="左シリンダー" value="0" id="cde" style="WIDTH: 150px; HEIGHT: 150px">　　　 <input type="button" name="右シリンダー" value="0" id="cde1" style="WIDTH: 150px; HEIGHT: 150px"><br>
+<input type="button" value="reset" id="reset" style="WIDTH: 150px"/>　　　 <input type="button" value="reset" id="reset1" style="WIDTH: 150px"/>
+ 
+ 
+ </p>
+</section>
+
+</div>
+
+<nav>
+ <h2>サイトメニュー</h2>
+  <ul>
+   <li><a href="index.html">ホーム</a></li>
+   <li><a href="search.html">配列サーチ</a></li>
+   <li><a href="card.html">アイカツ！カード表</a></li>
+   <li><a href="ranking.html">ランキング</a></li>
+   <li><a href="event.html">イベント</a></li>
+   <li><a href="contact.html">お問い合わせ</a></li>
+  </ul>
+</nav>
+
+<div id="page_back">
+ <p><a href="#page_top">▲ページトップに戻る</a></p>
+</div>
+
+<footer></footer>
+
+</body>
+</html>

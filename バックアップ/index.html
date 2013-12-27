@@ -1,0 +1,144 @@
+<html>
+<head><title>input.html</title>
+<script type="text/javascript"> 
+if ((navigator.userAgent.indexOf('iPhone') > 0 && 
+navigator.userAgent.indexOf('iPad') == -1) || 
+navigator.userAgent.indexOf('iPod') > 0 || navigator.userAgent.indexOf('Android') > 0) { 
+location.href = '/smartphone/'; 
+} 
+</script> 
+
+</head>
+<body>
+アイカツ新2弾山サーチ<br>
+カード番号を入力してください<br>
+※注）01,02,CP01,CP02などの1桁の番号は1,2,CP1,CP2と2桁目の0を除いて入力してください<br><br><br>
+1枚から利用できます。1~2枚目でレアカードを引いた際に有用だと思われます。<br>
+<form action="output.php" method="post">
+  <table border="1">
+    <tr>
+      <td>左用 カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<form action="output.php" method="post">
+  <table border="1">
+    <tr>
+      <td>右用 カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<br>
+途中で誤ったデータを入力した場合、それ以降のカードには色がつきません<br>
+例：配列データが1,2,3,4,5のところを1,2,4,5,6と誤って入力してしまった場合、1番目と2番目のデータには色がつくが、3番目以降のデータは色がつきません<br>
+<hr>
+<br>
+3枚から利用できます。3枚完全一致で出力します.<br>
+<form action="output2.php" method="post">
+  <table border="1">
+    <tr>
+      <td>左 カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<form action="output2.php" method="post">
+  <table border="1">
+    <tr>
+      <td>右 カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<hr>
+<br>
+5枚から利用できます。5枚完全一致で出力します<br>
+<form action="5mai.php" method="post">
+  <table border="1">
+    <tr>
+      <td>左 カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<form action="5mai.php" method="post">
+  <table border="1">
+    <tr>
+      <td>右 カードNo.</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td colspan="2" align="center">
+        <input type="submit" value="入力">
+      </td>
+    </tr>
+  </table>
+</form>
+<hr>
+<br>
+単純に入力した数値を塗りつぶします。<br>左右どちらの配列かわからない場合、数人と回してる場合などに有効かも？<br>
+<form action="output3.php" method="post">
+  <table border="1">
+    <tr>
+      <td>青色</td>
+      <td><input type="text" name="no1" style="width:50"></td>
+      <td><input type="text" name="no2" style="width:50"></td>
+      <td><input type="text" name="no3" style="width:50"></td>
+      <td><input type="text" name="no4" style="width:50"></td>
+      <td><input type="text" name="no5" style="width:50"></td>
+      <td rowspan="2">
+        <input type="submit" value="入力"></td>
+    </tr>
+    <tr>
+      <td>水色</td>
+      <td><input type="text" name="no6" style="width:50"></td>
+      <td><input type="text" name="no7" style="width:50"></td>
+      <td><input type="text" name="no8" style="width:50"></td>
+      <td><input type="text" name="no9" style="width:50"></td>
+      <td><input type="text" name="no10" style="width:50"></td>
+    </tr>
+  </table>
+</form>
+
+
+</body>
+</html>
